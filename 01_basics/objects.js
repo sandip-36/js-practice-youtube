@@ -65,6 +65,44 @@ const regularUser = {
      }
 }
 
+// console.log(regularUser.fullname.userfullname.firstname)
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+
+// const obj3 = {obj1, obj2} it will combined objects like they both are individual objects
+// const obj3 = Object.assign({}, obj1, obj2) // it will merged both objects
+const obj3 = {...obj1, ...obj2} // it will do the same and much easier way..
+
+console.log(obj3)
+
+const users = [
+    {
+        id:1,
+        email:"sd@gmail.com"
+    },
+    {
+        id:1,
+        email:"sd@gmail.com"
+    },
+    {
+        id:1,
+        email:"sd@gmail.com"
+    }
+]
+
+users[1].email
+
+console.log(tinderUser)
+
+console.log(Object.keys(tinderUser)); // its gives you all keys in arry
+console.log(Object.values(tinderUser)); //its gives you all values
+console.log(Object.entries(tinderUser)); // its gives you all entries
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); //asking the property is in ther or not it shows in boolean
+
+ 
+
 
 
 
