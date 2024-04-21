@@ -43,7 +43,7 @@ jsUser.greetingTwo = function(){
 
 
 
-//object part 1
+//object part 2
 
 // const tinderUser = new Object()
 const tinderUser = {}
@@ -93,19 +93,46 @@ const users = [
 
 users[1].email
 
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser)); // its gives you all keys in arry
-console.log(Object.values(tinderUser)); //its gives you all values
-console.log(Object.entries(tinderUser)); // its gives you all entries
+// console.log(Object.keys(tinderUser)); // its gives you all keys in arry
+// console.log(Object.values(tinderUser)); //its gives you all values
+// console.log(Object.entries(tinderUser)); // its gives you all entries
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //asking the property is in ther or not it shows in boolean
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //asking the property is in ther or not it shows in boolean
 
  
 
+// object part 3
+
+const course = {
+    coursename : "js in Hindi",
+    price : "999",
+    couseInstructer : "sandip"
+}
+
+// console.log(course.couseInstructer)  
+
+// const {couseInstructer} = course; // it  can minified the the call of an object 
+// console.log(couseInstructer)
+
+const {couseInstructer:instrac} = course; //// it  can minified and create new name for call an object
+
+console.log(instrac)
+
+// {                                        // basically api called json and its how js on looks...
+
+//     "name" = "sandip",                   //its how json looks, similar like object but without declartion
+//     "cousreName" = "js in Hindi",
+//     "price" = "free"
+// }
 
 
-
+// [                                    //if json comes in array it looks like this
+//     {},
+//     {},
+//     {}
+// ]
 
 
 
