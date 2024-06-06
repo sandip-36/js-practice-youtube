@@ -2,27 +2,29 @@
 
 let index = 1;
 while(index <= 10){
- console.log(`this is your index value ${index}`);
+//  console.log(`this is your index value ${index}`);
  index = index + 2
 }
 
 
-let myArray = ["Spiderman", "Thor", "Ironman"];
+let myArr = ["Ironman", "Spiderman", "Hulk", "Thor"]
 
-let i = 0;
-while (i < myArray.length) {
-    // console.log(`the value of array ${myArray[i]}`);
-    i = i + 1
+let arr = 0;
+while(arr < myArr.length){
+console.log(`this are the avengers ${myArr[arr]}`);
+    arr = arr + 1
 }
 
 //do while loop
 
-let score = 15
+let score = 1
 
-do {
-    // console.log(`score is ${score}`);
+do{
+    console.log(`here is your score ${score}`);
     score ++
-} while (score <= 10);
+}while(
+    score <= 15
+)
 
 
 
