@@ -72,7 +72,41 @@ const books = [
           .map((digit) => digit + 1 )
           .filter((retain) => retain >= 40 )
 
-  console.log(newnum);
+  // console.log(newnum);
 
 
 //  reduce  >>>>>>>>>>>>
+
+const renum = [1, 2, 3]
+
+// const redc = renum.reduce(function (acc, crnt) {
+//   console.log(`acc: ${acc} and currentval: ${crnt}`);
+//   return acc + crnt
+// }, 0)
+
+const redc = renum.reduce((acc, crnt) => acc+crnt , 0)
+
+console.log(redc);
+
+const shoppingcart = [
+  {
+    courseName : "JS",
+    coursePrice : 3999
+  },
+  {
+    courseName : "py",
+    coursePrice : 999
+  },
+  {
+    courseName : "Java",
+    coursePrice : 1999
+  },
+  {
+    courseName : "Data Science",
+    coursePrice : 13999
+  }
+]
+
+const total = shoppingcart.reduce((acc, item) => acc + item.coursePrice, 0)
+
+console.log(total);
