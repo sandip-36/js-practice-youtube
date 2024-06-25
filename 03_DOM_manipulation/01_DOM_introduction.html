@@ -12,8 +12,36 @@
 </head>
 <body class="bg-black">
     <div >
-        <h1 id="title" class="heading">Dom learning in chai aur code</h1>
+        <h1 id="title" class="heading">Dom learning in chai aur <span style="display: none;">test text</span> code</h1>
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
+
+    <script>
+    //    let ttl = document.getElementById('title')
+    //    let ttl = document.getElementById('title').id  //this will specific show you id 
+    //    let ttl = document.getElementById('title').className  //this will specific show you class
+    //    let ttl = document.getElementById('title').getAttribute('id')   //this will add you anty kind of attribute etc: class, id ,title
+    //    let ttl = document.getElementById('title').getAttribute('class')  // same example
+    //    let ttl = document.getElementById('title').setAttribute('class', 'set-class') //this wil set your attribute but it will replace previuos attribute
+    // let ttl = document.getElementById('title').setAttribute('class', 'set-class heading')  // if you dont want to replace your class
+    //    console.log(ttl);
+
+       const title = document.getElementById('title');
+       title.style.backgroundColor = "green";
+       title.style.padding = "10px";
+       title.style.borderRadius = "10px";
+
+       title.textContent
+       console.log(title.textContent);
+       title.innerHTML
+       console.log(title.innerText);
+       title.innerText
+       console.log(title.innerHTML);
+
+       let clsnm = document.getElementsByClassName('heading')
+       console.log(clsnm);
+
+       document.querySelector
+    </script>
 </body>
 </html>
